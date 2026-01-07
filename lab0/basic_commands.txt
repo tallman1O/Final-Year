@@ -1,0 +1,142 @@
+
+⸻
+
+BASIC NETWORKING COMMANDS (WINDOWS vs MACOS/LINUX)
+
+⸻
+
+IP / NETWORK CONFIGURATION
+
+Windows:
+ipconfig
+
+macOS / Linux:
+ifconfig
+
+Used to view IP address, subnet mask, and network interfaces.
+
+⸻
+
+PING (CHECK CONNECTIVITY)
+
+Windows / macOS / Linux:
+ping google.com
+
+Checks whether the destination host is reachable.
+
+⸻
+
+DNS LOOKUP
+
+Windows:
+nslookup google.com
+
+macOS / Linux:
+nslookup google.com
+OR
+dig google.com
+
+Resolves a domain name to its IP address.
+
+⸻
+
+TRACING NETWORK PATH (PATHING)
+
+Windows:
+tracert google.com
+
+macOS / Linux:
+traceroute google.com
+
+Shows the route taken by packets to reach the destination.
+
+⸻
+
+VIEW ACTIVE NETWORK CONNECTIONS
+
+Windows:
+netstat -an
+
+macOS / Linux:
+netstat -an
+
+Displays all active connections and listening ports.
+
+⸻
+
+CHECK IF PORT 8080 IS IN USE
+
+Windows:
+netstat -an | find “8080”
+
+macOS / Linux:
+netstat -an | grep 8080
+
+Used to check whether port 8080 is active or listening.
+
+⸻
+
+GET MAC ADDRESS
+
+Windows:
+getmac
+
+macOS:
+networksetup -getmacaddress en0
+
+Displays the physical (MAC) address of the network interface.
+
+⸻
+
+COMMAND HISTORY
+
+Windows / macOS / Linux:
+history
+
+Shows previously executed commands.
+
+⸻
+
+SYSTEM / NETWORK CONFIGURATION
+
+Windows:
+systeminfo
+
+macOS / Linux:
+ifconfig
+
+Displays system or network configuration details.
+
+⸻
+
+HOSTNAME
+
+View hostname (All OS):
+hostname
+
+Set hostname (macOS):
+sudo scutil –set HostName set-hostname
+sudo scutil –set LocalHostName set-hostname
+sudo scutil –set ComputerName set-hostname
+
+Used to view or change the system hostname.
+
+⸻
+
+ACTIVE PORTS 
+
+Check active (listening) ports on the system.
+
+MacOS/Linux:
+netstat -an | grep LISTEN
+
+Shows all ports that are currently active and listening for connections.
+
+Check a specific port (example: 8080):
+
+macOS / Linux:
+netstat -an | grep 8080
+
+Displays whether port 8080 is active.
+
+⸻
